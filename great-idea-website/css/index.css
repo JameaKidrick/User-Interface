@@ -49,7 +49,6 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-	
 	box-sizing: border-box;
 }
 
@@ -66,9 +65,14 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+nav{
+	position: relative;
+	bottom: 10px;
+}
+
 nav a{
 	text-decoration: none;
-	color: black;
+	color: grey;
 	margin-left: 60px;
 }
 
@@ -95,16 +99,15 @@ nav, .logo{
 	color: black;
 	text-decoration: none;
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 15px;
-	padding: 5px 55px;
-	bottom: 50px;
+	font-size: 18px;
+	padding: 10px 55px;
+	bottom: 45px;
 	border: 1px solid black;
 }
 
 #slogan, .circleimg, .button{
 	display: inline-block;
 	position: relative;
-	/* background-color: green; */
 }
 
 #content{
@@ -113,11 +116,21 @@ nav, .logo{
 	left: 50px;
 }
 
-.featurescontent, .aboutcontent{
+.featurescontent, .aboutcontent{/*HAD ISSUES GETTING SECTIONS INLINE; FIRST USED <p> AND GAVE 2ND CONTAINING DIV AND ID*/
 	display: inline-block;
 	position:relative;
 	width: 450px;
 	height: 130px;
+}
+
+#box{/*MADE BOX FOR LINES*/
+	position: absolute;
+	width: 880px;
+	height: 560px;
+	left: 50px;
+	top: 500px;
+	border-top: 1.5px solid black;
+	border-bottom: 1.5px solid black;
 }
 
 section{
@@ -133,12 +146,27 @@ section{
 	top: 45px;
 }
 
-.contactsection, #copyright{
+.contactsection{
 	position: relative;	
 	top: 175px;
 	left: 50px;
 }
+.number{
+	position: relative;
+	top: 15px;
+}
+.email{
+	position: relative;
+	top: 30px;
+}
 
-/* *{
-	border: 1px black solid !important;
-} */
+#copyright{
+	position: relative;
+	left: 370px;
+	top:270px;
+}
+
+body{
+	position: absolute;
+	left:500px;
+}
